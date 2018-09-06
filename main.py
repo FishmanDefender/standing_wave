@@ -7,8 +7,11 @@ class Simulation:
 
         self.res = 100
 
+        self.c = np.sqrt(1/2)
+
         self.pos0 = np.zeros(self.res + 2)
         self.pos1 = np.zeros(self.res + 2)
+        self.pos2 = np.zeros(self.res + 2)
 
         self.pos0[0] = get_sine(0)
 
@@ -17,7 +20,9 @@ class Simulation:
 
     def step(self):
 
-        
+        for x in range(len(self.pos2)):
+
+            # self.pos2[x] =
 
     def get_sine(self,num):
 
